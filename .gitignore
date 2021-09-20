@@ -1,0 +1,8 @@
+node_modules
+.idea
+/log
+*.log
+.DS_Store
+/upload_dir
+package-lock.json
+opwire-*

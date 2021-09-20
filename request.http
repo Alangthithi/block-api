@@ -1,0 +1,52 @@
+POST  http://localhost:5050/api/auth/register
+Content-Type: application/json
+
+{
+    "username":"thithi122",
+    "password":"thithi"
+}
+
+###
+
+POST http://localhost:5050/api/auth/login
+Content-Type: application/json
+
+{
+    "username":"thithi122",
+    "password":"thithi"
+}
+
+###
+
+POST http://localhost:5050/api/posts
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTQ1Y2Q2NWFkMjc5MjJmMTQ3ZTM4MGIiLCJpYXQiOjE2MzIwNDM1MzN9.IbzdKX4f0xkjF7fo6E1dm9KAOJ22E16RNOInr8aikSs
+
+{
+    "title":"my first code",
+    "description":"demo code",
+    "url":"google.com",
+    "status":"LEARNING"
+}
+
+###
+
+GET http://localhost:5050/api/posts
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTQ1Y2Q2NWFkMjc5MjJmMTQ3ZTM4MGIiLCJpYXQiOjE2MzIwNDcxOTh9.tj3WOwtOAQ-e3aZ2_23gRWsIyvx1KarirJyJvzlXwTk
+
+###
+
+PUT http://localhost:5050/api/posts/6147021d44720bec3fa52783
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTQ1Y2Q2NWFkMjc5MjJmMTQ3ZTM4MGIiLCJpYXQiOjE2MzIwNDM1MzN9.IbzdKX4f0xkjF7fo6E1dm9KAOJ22E16RNOInr8aikSs
+
+{
+    "title":"my update second",
+    "description":"demo code",
+    "url":"google.com",
+    "status":"LEARNING"
+}
+###
+
+DELETE http://localhost:5050/api/posts/6145dd97f5e4b3e0c59e7556
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTQ1Y2Q2NWFkMjc5MjJmMTQ3ZTM4MGIiLCJpYXQiOjE2MzIwNDcxOTh9.tj3WOwtOAQ-e3aZ2_23gRWsIyvx1KarirJyJvzlXwTk

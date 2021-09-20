@@ -1,0 +1,36 @@
+{
+  "name": "profile-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "profile-api": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alangthithi/block-api.git"
+  },
+  "keywords": [
+    "block",
+    "profile",
+    "demo"
+  ],
+  "author": "alangthithi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alangthithi/block-api/issues"
+  },
+  "homepage": "https://github.com/Alangthithi/block-api#readme",
+  "dependencies": {
+    "argon2": "^0.28.2",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
